@@ -1,6 +1,6 @@
 class Litescope < Formula
   desc "SQLite production operations — diff, validate, backup check, schema drift monitoring"
-  homepage "https://litescope.dev"
+  homepage "https://github.com/croc100/Litescope"
   version "0.1.0"
   license "Elastic-2.0"
 
