@@ -5,21 +5,21 @@
 class Litescope < Formula
   desc "The database operations layer for AI apps — schema, migrations & fleet health for SQLite/Turso"
   homepage "https://github.com/croc100/Litescope"
-  version "0.3.2"
+  version "0.3.3"
   license "Elastic-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.2/litescope_0.3.2_darwin_amd64.tar.gz"
-      sha256 "464e3357cc524ba379aeb4b70f862b0c4eb41b26bbffbf8d7d73a3725b4a2c74"
+      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.3/litescope_0.3.3_darwin_amd64.tar.gz"
+      sha256 "fc311926533a32af6f4902a3542e38f8bc33b3d05589b055ff214dc5ea013a8e"
 
       define_method(:install) do
         bin.install "litescope"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.2/litescope_0.3.2_darwin_arm64.tar.gz"
-      sha256 "0bbc12ecf6cc6c59befc76bd19e0440d6673af003f76c526ff0137046e7f958d"
+      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.3/litescope_0.3.3_darwin_arm64.tar.gz"
+      sha256 "b52ab46dd31375cf82f5e5516f7f851205e62c88826af598f74a88d1149b58dd"
 
       define_method(:install) do
         bin.install "litescope"
@@ -29,15 +29,15 @@ class Litescope < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.2/litescope_0.3.2_linux_amd64.tar.gz"
-      sha256 "a90a939e8c3a4f05bb549a35af6ce24a6330da474c13878b2a472df526fd5b1b"
+      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.3/litescope_0.3.3_linux_amd64.tar.gz"
+      sha256 "c45b7b58567e76396f52e20a3b6f9c01874a8609d0c9eaaf806b0ff3f73d085f"
       define_method(:install) do
         bin.install "litescope"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.2/litescope_0.3.2_linux_arm64.tar.gz"
-      sha256 "492b2626263899504cf7d54248048de39a462db566939482665d6165fb2c0932"
+      url "https://github.com/croc100/litescope-dist/releases/download/v0.3.3/litescope_0.3.3_linux_arm64.tar.gz"
+      sha256 "73a9401ed5039b702597a1f6db3c0167dbeed640104b38fa097e38eb4173dba0"
       define_method(:install) do
         bin.install "litescope"
       end
