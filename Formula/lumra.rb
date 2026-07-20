@@ -5,21 +5,21 @@
 class Lumra < Formula
   desc "Diagnose why a site is blocked, throttled, or tampered with — and where the interference originates"
   homepage "https://lumra.crode.net"
-  version "0.1.0"
+  version "0.2.0"
   license "Elastic-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/croc100/lumra/releases/download/v0.1.0/lumra_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9f2cccd5b2e97cc63ee2fe9a1b63b7d5bd2da9050fbf4fbd9dc7221b2216a704"
+      url "https://github.com/croc100/lumra/releases/download/v0.2.0/lumra_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2f3f9b676c019722bbf1d1d21d02bac2939176fe6e96a782da55a730d3727a4d"
 
       define_method(:install) do
         bin.install "lumra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/croc100/lumra/releases/download/v0.1.0/lumra_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8c42bbcca185e1250165126286432f0a63c81de6a4712a9dfdba871a59bd1dfc"
+      url "https://github.com/croc100/lumra/releases/download/v0.2.0/lumra_0.2.0_darwin_arm64.tar.gz"
+      sha256 "cbe5403abde20f3340baa6a8ebbe60d4ed4d332d2e4b0b298676688ac9c32bdd"
 
       define_method(:install) do
         bin.install "lumra"
@@ -29,15 +29,15 @@ class Lumra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/croc100/lumra/releases/download/v0.1.0/lumra_0.1.0_linux_amd64.tar.gz"
-      sha256 "66adbebac5ead6e24f78bd55502e68f0420edcffae79357c74776ec6ddf86f86"
+      url "https://github.com/croc100/lumra/releases/download/v0.2.0/lumra_0.2.0_linux_amd64.tar.gz"
+      sha256 "9776ec96c4ed481a6951b21524fcf2046c78f374af9f67eb8d99291bd1d3a401"
       define_method(:install) do
         bin.install "lumra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/croc100/lumra/releases/download/v0.1.0/lumra_0.1.0_linux_arm64.tar.gz"
-      sha256 "ac685fe748880deef96b80aa4f30b227e49d34eb9dc0332890e8aeb1e0f21f7f"
+      url "https://github.com/croc100/lumra/releases/download/v0.2.0/lumra_0.2.0_linux_arm64.tar.gz"
+      sha256 "4ce1700fbb4df89c33be48c49c544e84fa1131540d8bb3cdb554ffec1d343cdb"
       define_method(:install) do
         bin.install "lumra"
       end
