@@ -6,7 +6,7 @@ class Litescope < Formula
   desc "The database operations layer for AI apps — schema, migrations & fleet health for SQLite/Turso"
   homepage "https://github.com/croc100/Litescope"
   version "0.9.0"
-  license "Elastic-2.0"
+  license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
